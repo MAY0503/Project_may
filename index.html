@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about eating cats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid yellowgreen;
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+
+        header img {
+            margin: 10px;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 10px;
+        }
+
+        header h1 a {
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 80px;
+            letter-spacing: 2px;
+            color: rgb(60, 163, 86);
+        }
+
+        nav ul {
+
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        nav ul li {
+            border-bottom: 2px solid rgb(92, 219, 60);
+            display: inline;
+            text-transform: uppercase;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(221, 157, 61);
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 15px;
+            letter-spacing: 5px;
+            margin: 5px;
+
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: #0056b3;
+        }
+
+        #wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1800px;
+            margin: 20px auto;
+        }
+
+        aside {
+            width: 200px;
+            padding: 20px;
+            background-color: white;
+            border-right: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 8px;
+        }
+
+        form input[type="text"], 
+        form input[type="password"] 
+        {
+            width: 80%;
+            padding: 3px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        form input[type="submit"],
+        form input[type="reset"] 
+        {
+            padding: 5px;
+            background-color: rgb(247, 185, 70);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            margin: 5px;
+            margin-bottom: 50px;
+        }
+
+        form input[type="submit"]:hover,
+        form input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+
+        .centered {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        aside h2 { 
+            border-top: 3px solid rgb(255, 148, 9);
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(60, 163, 86);
+            letter-spacing: 3px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 50px 0 0 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        aside ul li {
+            margin-bottom: 50px;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+            letter-spacing: 2px;
+            color: rgb(83, 85, 83);
+        }
+
+        aside a:hover {
+            text-decoration: underline;
+            color: rgb(216, 130, 2);
+        }
+
+
+        section {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        article {
+            min-width: 250px;
+            max-width: 250px;
+            margin-right: 5px;
+            padding-top: 25px;
+            padding-bottom: 20px;
+        }
+
+        article h3{
+            color: rgb(247, 141, 43);
+            letter-spacing: 2px;
+            margin: 10px;
+        }
+
+        article p{
+            letter-spacing: 2px;
+            margin: 1px;
+            font-size: 13px;
+        }
+
+        article img {
+            width: 200px;
+            height: 500px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid yellowgreen;
+            background-color: white;
+            color: gray;
+            width: 100%;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <img src="/img/cat33.jpg" width="300" height="200">
+        <h1><a href="#">All about eating cats</a></h1>
+    </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">STORE</a></li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">CONTACTS</a></li>
+        </ul>
+    </nav>
+
+    <div id="wrapper">
+        <aside>
+            <div class="aside 1">
+                <form action="login.jsp" method="post">
+                    <label for="ID">ID</label>
+                    <input type="text" id="ID" name="user" placeholder="ID" required><br>
+                    <label for="PW">PW</label>
+                    <input type="password" id="PW" name="PW" placeholder="Enter your password" required><br>
+                    <div class="centered">
+                        <input type="submit" value="로그인">
+                        <input type="reset" value="회원가입">
+                    </div>
+                </form>
+            </div>
+            <div class="aside 2">
+            <h2>Category</h2>
+                <ul>
+                    <li><a target="iframe1" href="#">Type</a></li>
+                    <li><a target="iframe1" href="#">Ingredients</a></li>
+                    <li><a target="iframe1" href="#">Age</a></li>
+                    <li><a target="iframe1" href="#">Functional</a></li>
+                    <li><a target="iframe1" href="#">Goods</a></li>
+                </ul>
+            </div>
+        </aside>
+       
+        <section>
+            <article class="at1">
+                <img src="./img/Ka2.jpg" width="200" height="500">
+                <h3>건강한 사료</h3> 
+                <p>엄격히 관리된 공정과<br>
+                    신선한 원재료로<br>
+                    믿을 수 있게 만드는 믿음직한 사료
+                </p>
+            </article>
+
+            <article class="at2">
+                <img src="./img/습식12.jpg" width="200" height="500">
+                <h3>NEW! 습식 론칭</h3>
+                <p>까다로운 고양이도 OK!<br>
+                두 가지 타입으로 맛과 영양<br>
+                수량을 한 번에 잡기
+            </p>
+
+            </article>
+
+            <article class="at3">
+                <img src="./img/Kak3.jpg" width="200" height="500">
+                <h3>NEW! 고양이 간식</h3>
+                <p>이빨 과자로 맛있는 치석 예방</p>
+            </article>
+
+            <article class="at4">
+                <img src="./img/사료1.jpg" width="200" height="500">
+                <h3>6.1~6.10</h3>
+                <p>전 품목 1+1 할인 이벤트 및<br>
+                첫 구매자 중복 할인 이벤트
+            </p>
+
+            </article>
+            
+            <article class="at5"> 
+                <img src="./img/cat11.jpg" width="200" height="500">
+                <h3>현충일 배송 안내</h3> 
+                <p>6.6 현충일은 모든 고객센터 및 배송이 중단됩니다.<br>
+                    제품 주문건은 6.7부터 순차적으로 배송됩니다.</p>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>all about eating cats 2024 corp</p>
+    </footer>
+</body>
+</html>
